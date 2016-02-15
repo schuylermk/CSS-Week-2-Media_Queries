@@ -19,6 +19,10 @@ body {
   line-height: 26px;
 }
 
+header img {
+  display: none;
+}
+
 .wrapper {
   width: 90%;
   margin: 0 auto;
@@ -82,6 +86,13 @@ nav a:hover {
   padding: 0px 5% 10px;
 }
 
+article img {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
 .footer-container footer {
   color: white;
   padding: 20px 0;
@@ -121,9 +132,19 @@ Media Queries
     font-size: 2.5em;
     margin-top: 75px;
   }
-}
 
-@media screen and (min-width: 800px)  {
+  header img {
+    display: inline-block;
+    float: right;
+    max-width: 30%;
+    margin: 10px 0;
+    padding-left: 30px;
+  }
+
+  article img {
+    margin-top: 40px;
+  }
+
   article {
     width: 62.66%;
     float: left;
@@ -135,7 +156,6 @@ Media Queries
   article section:nth-of-type(2) h2 {
     margin-top: 0;
   }
-
   .main .column-right {
     width: 33.33%;
     float: left;
@@ -163,7 +183,12 @@ Media Queries
     padding: 20px 55px;
     margin-right: 20px;
   }
-
+  .header-container {
+    max-height: 282px;
+  }
+  .header-container img {
+    max-height: 242px;
+  }
   aside h3,
   footer h3 {
     font-size: 1.5em;
@@ -171,6 +196,11 @@ Media Queries
 
   section h2 {
     font-weight: normal;
+  }
+}
+@media screen and (min-width: 1250px)  {
+  nav a {
+    padding: 30px 55px;
   }
 }
 /*************************
