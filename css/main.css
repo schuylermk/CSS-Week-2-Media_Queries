@@ -87,6 +87,11 @@ nav a:hover {
   padding: 20px 0;
 }
 
+.column-right img {
+  float: left;
+  max-width: 100%;
+  padding-top: 25px;
+}
 
 /*************************
 Media Queries
@@ -131,7 +136,7 @@ Media Queries
     margin-top: 0;
   }
 
-  .main aside {
+  .main .column-right {
     width: 33.33%;
     float: left;
     padding: 25px;
